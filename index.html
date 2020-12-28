@@ -40,7 +40,9 @@
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
 		filter: true,
-		filerConfig: {
+		filterConfig: {
+			isRegexFilter: false,
+			matchCase: true,
 			matchWords: true,
 		},
         url: "https://petstore.swagger.io/v2/swagger.json",
